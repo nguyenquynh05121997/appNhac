@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>App nhac</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="song-header">
+            <p class="song-name">Làm vợ anh nhé</p>
+        </div>
+        <div class="song-img">
+            <img src="./asset/img/img1.jpeg" alt="song img">
+        </div>
+
+        <div class="song-control">
+            <i class="fa-solid fa-rotate-left replay"></i>
+            <i class="fa-solid fa-backward pre" ></i>
+            <i class="fa-solid fa-play play"></i>
+            <i class="fa-solid fa-pause pause" style="display: none"></i>
+            <i class="fa-solid fa-forward next"></i>
+            <i class="fa-solid fa-shekel-sign seek"></i>
+        </div>
+
+        <div class="range">
+            <input type="range" name="range" value="0" step='any' max="100" id="range">
+        </div>
+
+        <div class="song-list">
+            <!-- <div class="song-item">
+                <div class="song-avatar">
+                    <img src="./asset/img/img1.jpeg" alt="">
+                </div>
+                <div class="song-content">
+                    <p class="song-name-text">Làm vợ anh nhé</p>
+                    <p class="song-owner">Chi Dân</p>
+                    <p class="song-time"><pan>4</span>:<span>56</span></p>
+                </div>
+                <div class="song-menu">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div> -->
+        </div>
+
+        <audio class="audio" src="./asset/song/song1.mp3" controls></audio>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
